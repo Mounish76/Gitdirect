@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Final-Project</title>
+	<link rel="stylesheet" href="styles.css">
+	<script defer src="app.js"></script>
+	<script type="text/javascript">
+	function pageRedirect() 
+	{
+        window.location.href = "./main_2.html";
+        document.getElementById("form").reset();
+    }
+	</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<div>		
+	<div class="container-fluid bg-warning">
+<body>
+	<center>
+		<div>
+			<div class="container-fluid bg-danger text-warning p-3">
+            <h1 class="display-4 text-center">Login Form</h1>
+        </div>
+       	<br>
+		<form action="/" method="GET" class="container" id="form">
+			<label for="email">E-mail</label>
+			<input type="text" name="email" id="email" placeholder="Mail-ID"><br><br>
+			<label>Password</label>
+			<input type="password" name="password" id="password" placeholder="Enter ur password">
+			<i class="far fa-eye" id="togglePassword"></i>
+			<br><br>
+			<label>Confirm password</label>
+			<input type="Password" name="password2" id="re-enter" placeholder="Re-Enter ur password"><br><br>
+			<button type="submit" onclick="pageRedirect()" class="btn btn-primary">Login</button><br><br>
+			<h6>Forgot Password ??? <a href="#">Clickhere</a></h6>
+		</form>	
+	</center>
+</body>
+</div>
+</html>
